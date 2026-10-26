@@ -1,0 +1,275 @@
+:root { 
+  --couleur-principale: #b5651d; 
+  --fond: #fff8f0; 
+} 
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  background: var(--fond); 
+  color: #333; 
+} 
+header { 
+  background: var(--couleur-principale); 
+  color: white; 
+  padding: 1rem 2rem; 
+} 
+nav a { 
+  color: white; 
+  margin-right: 1rem; 
+  text-decoration: none; 
+} 
+.hero { 
+  text-align: center; 
+  padding: 3rem 1rem; 
+} 
+.bouton { 
+  background: var(--couleur-principale); 
+  color: white; 
+  padding: .7rem 1.2rem; 
+  border-radius: 6px; 
+  text-decoration: none; 
+} 
+footer { 
+  text-align: center; 
+  padding: 1rem; 
+  background: #eee; 
+}
+
+/* Grille des produits */
+.grille, section:not(.hero):not(.contact) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section:not(.hero):not(.contact) h2 {
+  grid-column: 1 / -1;
+  margin: 0 0 1rem 0;
+}
+
+/* Cartes produits */
+.carte {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.carte:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.carte img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.carte h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.origine {
+  color: #b5651d;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.prix {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.carte p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+/* Filtres */
+.filtres {
+  padding: 1rem 2rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.filtres label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.filtres select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #b5651d;
+  cursor: pointer;
+  background-color: white;
+}
+
+
+/* Adaptation aux écrans mobiles */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    display: block;
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+  }
+  
+  .grille, section:not(.hero):not(.contact) {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.5rem;
+  }
+  
+  .hero {
+    padding: 2rem 0.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .carte {
+    padding: 0.8rem;
+  }
+
+  .filtres {
+    padding: 1rem 0.5rem;
+    flex-direction: column;
+  }
+
+  .filtres label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .filtres select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact {
+    padding: 1rem 0.5rem;
+  }
+}
+
+
+/* Formulaire de contact */
+.contact {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+form label span {
+  color: #e74c3c;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #b5651d;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 3px solid #b5651d;
+  outline-offset: 2px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background: var(--couleur-principale);
+  color: white;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #8b4513;
+}
+
+form button:focus {
+  outline: 3px solid #b5651d;
+  outline-offset: 2px;
+}
+
+form small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #666;
+}

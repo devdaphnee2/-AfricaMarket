@@ -9,24 +9,31 @@
 <body>
   <header>
     <h1>AfriMarket</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <a href="index.html">Accueil</a>
       <a href="produits.html">Produits</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
-    <section class="contact">
-      <h2>Nous contacter</h2>
-      <form id="form-contact">
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required>
+    <section class="contact" aria-labelledby="titre-contact">
+      <h2 id="titre-contact">Nous contacter</h2>
+      <form id="form-contact" novalidate>
+        <div class="form-group">
+          <label for="nom">Nom <span aria-label="obligatoire">*</span> :</label>
+          <input type="text" id="nom" name="nom" required aria-required="true">
+        </div>
         
-        <label for="email">E-mail :</label>
-        <input type="email" id="email" name="email" required>
+        <div class="form-group">
+          <label for="email">E-mail <span aria-label="obligatoire">*</span> :</label>
+          <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+          <small id="email-help">Format : exemple@domaine.com</small>
+        </div>
         
-        <label for="message">Message :</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="form-group">
+          <label for="message">Message <span aria-label="obligatoire">*</span> :</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+        </div>
         
         <button type="submit">Envoyer</button>
       </form>

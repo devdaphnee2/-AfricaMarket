@@ -120,3 +120,82 @@ section:not(.hero):not(.contact) h2 {
   cursor: pointer;
   background-color: white;
 }
+
+
+/* Adaptation aux écrans mobiles */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 0.5rem;
+  }
+  
+  nav a {
+    display: block;
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+  }
+  
+  .grille, section:not(.hero):not(.contact) {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.5rem;
+  }
+  
+  .hero {
+    padding: 2rem 0.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .carte {
+    padding: 0.8rem;
+  }
+
+  .filtres {
+    padding: 1rem 0.5rem;
+    flex-direction: column;
+  }
+
+  .filtres label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .filtres select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    max-width: none;
+  }
+
+  .contact {
+    padding: 1rem 0.5rem;
+  }
+}

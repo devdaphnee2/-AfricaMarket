@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produits - AfriMarket</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>AfriMarket</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Nos produits</h2>
+      
+      <div class="filtres">
+        <label for="categorie">Filtrer par catégorie :</label>
+        <select id="categorie">
+          <option value="tous">Tous les produits</option>
+          <option value="Épices">Épices</option>
+          <option value="Alimentation">Alimentation</option>
+          <option value="Beauté">Beauté</option>
+          <option value="Boissons">Boissons</option>
+          <option value="Artisanat">Artisanat</option>
+        </select>
+      </div>
+      
+      <article class="carte">
+        <img src="images/poivre-penja.jpg" alt="Poivre de Penja">
+        <h3>Poivre de Penja</h3>
+        <p class="origine">Cameroun</p>
+        <p>Poivre aromatique cultivé dans la région de Penja.</p>
+        <p class="prix">3 500 FCFA</p>
+      </article>
+
+      <article class="carte">
+        <img src="images/miel-oku.jpg" alt="Miel blanc d'Oku">
+        <h3>Miel blanc d'Oku</h3>
+        <p class="origine">Cameroun</p>
+        <p>Miel pur et biologique des montagnes du Cameroun.</p>
+        <p class="prix">4 500 FCFA</p>
+      </article>
+
+      <article class="carte">
+        <img src="images/karite.jpg" alt="Beurre de karité">
+        <h3>Beurre de karité</h3>
+        <p class="origine">Burkina Faso</p>
+        <p>Beurre naturel et hydratant pour la peau.</p>
+        <p class="prix">2 500 FCFA</p>
+      </article>
+
+      <article class="carte">
+        <img src="images/cacao.jpg" alt="Fèves de cacao">
+        <h3>Fèves de cacao</h3>
+        <p class="origine">Côte d'Ivoire</p>
+        <p>Fèves de cacao de qualité premium pour le chocolat.</p>
+        <p class="prix">5 000 FCFA</p>
+      </article>
+
+      <article class="carte">
+        <img src="images/cafe.jpg" alt="Café arabica">
+        <h3>Café arabica</h3>
+        <p class="origine">Éthiopie</p>
+        <p>Café arabica moulu ou en grains, saveur riche.</p>
+        <p class="prix">3 800 FCFA</p>
+      </article>
+
+      <article class="carte">
+        <img src="images/kente.jpg" alt="Tissu Kente">
+        <h3>Tissu Kente</h3>
+        <p class="origine">Ghana</p>
+        <p>Tissu traditionnel tissé à la main, motifs colorés.</p>
+        <p class="prix">6 000 FCFA</p>
+      </article>
+    </section>
+  </main>
+  <footer><p>&copy; 2026 AfriMarket - Projet pédagogique</p></footer>
+  <script src="js/produits.js"></script>
+  <script src="js/filtre.js"></script>
+</body>
+</html>

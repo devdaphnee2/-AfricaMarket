@@ -5,7 +5,7 @@
         "pays": "Cameroun",
         "categorie": "Épices",
         "prix": 3500,
-        "image": "images/poivre-penja.jpg"
+        "image": "images/Poivre de Penja.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "pays": "Cameroun",
         "categorie": "Alimentation",
         "prix": 4000,
-        "image": "images/miel-oku.jpg"
+        "image": "images/Miel blanc d'Oku.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "pays": "Burkina Faso",
         "categorie": "Beauté",
         "prix": 2500,
-        "image": "images/karite.jpg"
+        "image": "images/Beurre de karité.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "pays": "Côte d'Ivoire",
         "categorie": "Alimentation",
         "prix": 3000,
-        "image": "images/cacao.jpg"
+        "image": "images/Fèves de cacao.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "pays": "Éthiopie",
         "categorie": "Boissons",
         "prix": 5000,
-        "image": "images/cafe-arabica.jpg"
+        "image": "images/Café arabica.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "pays": "Ghana",
         "categorie": "Artisanat",
         "prix": 15000,
-        "image": "images/kente.jpg"
+        "image": "images/Tissu Kente.jpg"
     },
     {
         "id": 7,

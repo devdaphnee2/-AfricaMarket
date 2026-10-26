@@ -19,54 +19,22 @@
     </header>
     <main>
         <h2>Nos produits</h2>
-        <div class="grille">
-            <article class="carte">
-                <img src="images/Poivre de Penja.jpg" alt="Poivre de Penja">
-                <h3>Poivre de Penja</h3>
-                <p class="origine">Cameroun</p>
-                <p>Poivre aromatique cultivé dans la région de Penja.</p>
-                <p class="prix">3 500 FCFA</p>
-            </article>
-            <article class="carte">
-                <img src="images/Miel blanc d'Oku.jpg" alt="Miel blanc d'Oku">
-                <h3>Miel blanc d'Oku</h3>
-                <p class="origine">Cameroun</p>
-                <p>Miel crémeux récolté dans les montagnes d'Oku.</p>
-                <p class="prix">4 000 FCFA</p>
-            </article>
-            <article class="carte">
-                <img src="images/Beurre de karité.jpg" alt="Beurre de karité">
-                <h3>Beurre de karité</h3>
-                <p class="origine">Burkina Faso</p>
-                <p>Beurre naturel pour la peau et les cheveux.</p>
-                <p class="prix">2 500 FCFA</p>
-            </article>
-            <article class="carte">
-                <img src="images/Fèves de cacao.jpg" alt="Fèves de cacao">
-                <h3>Fèves de cacao</h3>
-                <p class="origine">Côte d'Ivoire</p>
-                <p>Fèves de cacao de qualité, base du chocolat.</p>
-                <p class="prix">3 000 FCFA</p>
-            </article>
-            <article class="carte">
-                <img src="images/Café arabica.jpg" alt="Café arabica">
-                <h3>Café arabica</h3>
-                <p class="origine">Éthiopie</p>
-                <p>Café parfumé aux notes fruitées.</p>
-                <p class="prix">5 000 FCFA</p>
-            </article>
-            <article class="carte">
-                <img src="images/Tissu Kente.jpg" alt="Tissu Kente">
-                <h3>Tissu Kente</h3>
-                <p class="origine">Ghana</p>
-                <p>Tissu traditionnel tissé à la main.</p>
-                <p class="prix">15 000 FCFA</p>
-            </article>
-        </div>
+        <label for="categorie">Catégorie</label>
+        <select id="categorie">
+            <option value="tous">Toutes</option>
+            <option value="Épices">Épices</option>
+            <option value="Alimentation">Alimentation</option>
+            <option value="Beauté">Beauté</option>
+            <option value="Boissons">Boissons</option>
+            <option value="Artisanat">Artisanat</option>
+        </select>
+        <div id="liste-produits" class="grille"></div>
     </main>
     <footer>
         <p>&copy; 2026 AfriMarket - Projet pédagogique</p>
     </footer>
+    <script src="js/produits.js"></script>
+    <script src="js/filtre.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,7 @@ function afficher(liste) {
             <h3>${p.nom}</h3>
             <p class="origine">${p.pays} · ${p.categorie}</p>
             <p class="prix">${p.prix.toLocaleString('fr-FR')} FCFA</p>
+            <button onclick="ajouterAuPanier(${p.id})">Ajouter au panier</button>
         </article>`).join('');
 }
 

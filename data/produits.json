@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "nom": "Poivre de Penja",
+        "pays": "Cameroun",
+        "categorie": "Épices",
+        "prix": 3500,
+        "image": "images/poivre-penja.jpg"
+    },
+    {
+        "id": 2,
+        "nom": "Miel blanc d'Oku",
+        "pays": "Cameroun",
+        "categorie": "Alimentation",
+        "prix": 4000,
+        "image": "images/miel-oku.jpg"
+    },
+    {
+        "id": 3,
+        "nom": "Beurre de karité",
+        "pays": "Burkina Faso",
+        "categorie": "Beauté",
+        "prix": 2500,
+        "image": "images/karite.jpg"
+    },
+    {
+        "id": 4,
+        "nom": "Fèves de cacao",
+        "pays": "Côte d'Ivoire",
+        "categorie": "Alimentation",
+        "prix": 3000,
+        "image": "images/cacao.jpg"
+    },
+    {
+        "id": 5,
+        "nom": "Café arabica",
+        "pays": "Éthiopie",
+        "categorie": "Boissons",
+        "prix": 5000,
+        "image": "images/cafe-arabica.jpg"
+    },
+    {
+        "id": 6,
+        "nom": "Tissu Kente",
+        "pays": "Ghana",
+        "categorie": "Artisanat",
+        "prix": 15000,
+        "image": "images/kente.jpg"
+    },
+    {
+        "id": 7,
+        "nom": "Poivre blanc de Penja",
+        "pays": "Cameroun",
+        "categorie": "Épices",
+        "prix": 4500,
+        "image": "images/poivre-blanc.jpg"
+    },
+    {
+        "id": 8,
+        "nom": "Huile de palme rouge",
+        "pays": "Nigeria",
+        "categorie": "Alimentation",
+        "prix": 2000,
+        "image": "images/huile-palme.jpg"
+    },
+    {
+        "id": 9,
+        "nom": "Savon noir",
+        "pays": "Ghana",
+        "categorie": "Beauté",
+        "prix": 1500,
+        "image": "images/savon-noir.jpg"
+    },
+    {
+        "id": 10,
+        "nom": "Thé rooibos",
+        "pays": "Afrique du Sud",
+        "categorie": "Boissons",
+        "prix": 3500,
+        "image": "images/rooibos.jpg"
+    },
+    {
+        "id": 11,
+        "nom": "Panier tressé",
+        "pays": "Sénégal",
+        "categorie": "Artisanat",
+        "prix": 8000,
+        "image": "images/panier.jpg"
+    },
+    {
+        "id": 12,
+        "nom": "Piment séché",
+        "pays": "Bénin",
+        "categorie": "Épices",
+        "prix": 1800,
+        "image": "images/piment.jpg"
+    }
+]
